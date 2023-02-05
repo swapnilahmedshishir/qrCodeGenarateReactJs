@@ -33,3 +33,23 @@ header button{
   border-radius: 6px 6px 0  0;
   letter-spacing: 1px;
 }
+.qr_code_img{
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+
+}
+.ion {
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background: #fff url(./logo.svg) 0 0 no-repeat
+}
+video{
+  width: 10px;
+  height: 100px;
+}
+/* #input {
+  display: none
+} */

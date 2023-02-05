@@ -14,13 +14,13 @@ const Genatate = () => {
       console.log(error);
     }
   };
-  console.log(imageUrl);
+  //console.log(imageUrl);
 
   return (
     <div>
       <div className="genarate">
         <Button variant="success" onClick={() => generateQrCode()}>
-          Qr Code Genarate{" "}
+          QR Code Genarate{" "}
         </Button>
         <input
           type="text"
@@ -32,10 +32,16 @@ const Genatate = () => {
       <br />
       <br />
       {imageUrl ? (
-        <a href={imageUrl} download>
-          <img src={imageUrl} alt="img" />
-        </a>
+        <div>
+           <img className='qr_code_img' src={imageUrl} alt="img" />
+           
+           <a  href={imageUrl} download>
+           <Button variant="warning" className="m-5">Download QR Code</Button>
+            </a>
+        </div>
+       
       ) : null}
+       
     </div>
   );
 };
